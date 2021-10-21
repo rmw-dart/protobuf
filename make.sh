@@ -3,4 +3,4 @@ set -e
 DIR=$( dirname $(realpath "$0") )
 cd $DIR
 
-protoc --dart_out=dart main.proto
+protoc --dart_out=dart/lib rmw.proto
