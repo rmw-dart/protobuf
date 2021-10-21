@@ -1,5 +1,5 @@
 syntax = "proto3";
-message SearchRequest
+message MsgMeta
 {
   string query = 1;
   int32 page_number = 2;

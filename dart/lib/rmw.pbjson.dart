@@ -8,9 +8,9 @@
 import 'dart:core' as $core;
 import 'dart:convert' as $convert;
 import 'dart:typed_data' as $typed_data;
-@$core.Deprecated('Use searchRequestDescriptor instead')
-const SearchRequest$json = const {
-  '1': 'SearchRequest',
+@$core.Deprecated('Use msgMetaDescriptor instead')
+const MsgMeta$json = const {
+  '1': 'MsgMeta',
   '2': const [
     const {'1': 'query', '3': 1, '4': 1, '5': 9, '10': 'query'},
     const {'1': 'page_number', '3': 2, '4': 1, '5': 5, '10': 'pageNumber'},
@@ -18,5 +18,5 @@ const SearchRequest$json = const {
   ],
 };
 
-/// Descriptor for `SearchRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List searchRequestDescriptor = $convert.base64Decode('Cg1TZWFyY2hSZXF1ZXN0EhQKBXF1ZXJ5GAEgASgJUgVxdWVyeRIfCgtwYWdlX251bWJlchgCIAEoBVIKcGFnZU51bWJlchImCg9yZXN1bHRfcGVyX3BhZ2UYAyABKAVSDXJlc3VsdFBlclBhZ2U=');
+/// Descriptor for `MsgMeta`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List msgMetaDescriptor = $convert.base64Decode('CgdNc2dNZXRhEhQKBXF1ZXJ5GAEgASgJUgVxdWVyeRIfCgtwYWdlX251bWJlchgCIAEoBVIKcGFnZU51bWJlchImCg9yZXN1bHRfcGVyX3BhZ2UYAyABKAVSDXJlc3VsdFBlclBhZ2U=');

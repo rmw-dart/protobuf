@@ -9,16 +9,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-class SearchRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'SearchRequest', createEmptyInstance: create)
+class MsgMeta extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MsgMeta', createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'query')
     ..a<$core.int>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'pageNumber', $pb.PbFieldType.O3)
     ..a<$core.int>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'resultPerPage', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
 
-  SearchRequest._() : super();
-  factory SearchRequest({
+  MsgMeta._() : super();
+  factory MsgMeta({
     $core.String? query,
     $core.int? pageNumber,
     $core.int? resultPerPage,
@@ -35,26 +35,26 @@ class SearchRequest extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory SearchRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MsgMeta.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MsgMeta.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  SearchRequest clone() => SearchRequest()..mergeFromMessage(this);
+  MsgMeta clone() => MsgMeta()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  SearchRequest copyWith(void Function(SearchRequest) updates) => super.copyWith((message) => updates(message as SearchRequest)) as SearchRequest; // ignore: deprecated_member_use
+  MsgMeta copyWith(void Function(MsgMeta) updates) => super.copyWith((message) => updates(message as MsgMeta)) as MsgMeta; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static SearchRequest create() => SearchRequest._();
-  SearchRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchRequest> createRepeated() => $pb.PbList<SearchRequest>();
+  static MsgMeta create() => MsgMeta._();
+  MsgMeta createEmptyInstance() => create();
+  static $pb.PbList<MsgMeta> createRepeated() => $pb.PbList<MsgMeta>();
   @$core.pragma('dart2js:noInline')
-  static SearchRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchRequest>(create);
-  static SearchRequest? _defaultInstance;
+  static MsgMeta getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MsgMeta>(create);
+  static MsgMeta? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get query => $_getSZ(0);
